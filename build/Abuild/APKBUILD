@@ -5,7 +5,7 @@
 pkgname=python3-pluggy
 _pkgname=pluggy
 pkgver=1.6.0
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Plugin management and hook calling for Python"
 # Needs py3-pytest for checkdepends, which require py3-pluggy
 # in depends, so disable here to break a circular dependency
@@ -40,7 +40,6 @@ package() {
         .dist/*.whl
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 8b88eb778ab955910bcde2b3a6c4925d0a239f932aa9b1d8a351aa21b8a922bd842f735e397ef15ed9bd8e51085a88723660e1e691888a9879e7144add32bff2  pluggy-1.6.0.tar.gz
 "
